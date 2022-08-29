@@ -19,8 +19,8 @@ client.on("error", (error) => {
 
 //set up Express Server
 const app = express();
-const port = int(process.env.PORT_NUM);
-const chat_id = int(process.env.CHAT_ID)
+const port = Number(process.env.PORT_NUM);
+const chat_id = Number(process.env.CHAT_ID)
 const keyboardOptions = {
     keyboard: [
         [{ text: "Toggle Room Light" }, { text: "Off Room Light" }],
